@@ -8,7 +8,7 @@ class DataSource {
         url: "http://api.weatherapi.com/v1/forecast.json",
         params: { q: keyword, days: "3" },
         headers: {
-          key: "b888bee4d805454fb2c223832230304",
+          key: process.env.API_KEY,
         },
       })
       .then((response) => {
