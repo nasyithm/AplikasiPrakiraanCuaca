@@ -5,7 +5,7 @@ class DataSource {
     return axios
       .request({
         method: "GET",
-        url: "http://api.weatherapi.com/v1/forecast.json",
+        url: "https://api.weatherapi.com/v1/forecast.json",
         params: { q: keyword, days: "3" },
         headers: {
           key: process.env.API_KEY,
